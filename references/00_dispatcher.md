@@ -17,6 +17,15 @@ Prompt the user for the following 4 pieces of information (if not running in `-y
 
 **Idempotency & Rerun Policy:** If the target workspace directory (always use absolute paths to avoid bare `./` traversal risks) already exists, pause and ask the user whether to `resume` (skip existing files), `clobber` (overwrite), or `abort`. Even in non-interactive mode, `clobber` requires explicit user confirmation to prevent data loss. Default to `resume` if no input is provided.
 
+### 1.1 Primary Association Lock-In (Pre-Launch Gate — decide BEFORE Day 1)
+
+*Source: Charles Floate (LLM Mastery). Net-new doctrine for this skill — no canonical twin.*
+
+* **The Rule:** Anchor the brand to **one primary entity association** during launch (e.g., PressWiz = "link building marketplace", not broad "SEO services") before expanding to secondary services. Core topical pages publish on-site with the Day 1 flip (within the Stage 2 Top 5 cap), but external citations and guest posts focus **exclusively** on reinforcing the single primary association.
+* **The 10x Reversal Cost:** Misclassification (e.g., an email management tool absorbed as an "email newsletter" tool) takes a reported ~10x the effort to correct due to model caching and reinforcement weights (directional, single-source).
+* **Research Gate (mandatory):** Before scaffolding Stage 2, decide the primary association from competitor-category gaps and the intended revenue core — this is the single highest-leverage launch decision, and the doctrine cuts both ways: locking the *wrong* association is itself the 10x mistake. In non-interactive mode, derive the association from intake context and record it as `ASSUMED` for later human confirmation.
+* **Output:** Record the chosen primary association + 2 rejected alternates in `/semantics/semantic_triples.md` so later stages cannot silently drift.
+
 ## Stage 2: On-Site Groundwork (Workspace Scaffolding)
 
 Create the `[brand-slug]-launchpad/` directory (using absolute paths). **Before creating any files, explicitly echo the resolved absolute path to the user.** Populate it:
@@ -32,6 +41,24 @@ Create the `[brand-slug]-launchpad/` directory (using absolute paths). **Before 
 *   **`/content/`**
     *   *Warning:* Do not blindly generate 1,000 files. Cap generation at the **Top 5 core pages**. Output the remainder of the topical map as `content_manifest.csv` and prompt the user for confirmation before bulk creation.
     *   For the core pages, scaffold `.md` stubs with H1/H2 structures and semantic guidelines.
+
+### 2.1 Comparison-Page Launch Staging (Self-Contained Twin of `kirby-aiseo-skill` Module 2 §2.40)
+
+> **Self-contained duplicate (twin).** The doctrine block below replicates `kirby-aiseo-skill` Module 2 §2.40 verbatim per the duplication policy; update both twins in the same change. The application layer after it is launch-specific and not part of the canonical block.
+
+**Doctrine block (verbatim from canonical):**
+
+* **Listicle Demotion:** Standard "top 10" listicles saw significant demotions in recent core updates due to programmatic AI-spam saturation. Deprecate thin listicle generation as a default format.
+* **Comparison Pages ("X vs. Y") are the premier format for shifting LLM consensus** — a single syndicated comparison article can shift a Google AI Overview for its head term. Integrates with §2.6 (mandatory competitor context) and §2.10 (high-intent comparison hubs).
+* **The 99%/1% Consensus Rule:** Mirror 99% of established SERP consensus in the comparison to satisfy algorithmic consensus filters, then position the brand as the superior solution within the remaining 1%. Weak 1% differentiation degrades into me-too content — the differentiator must be a checkable fact (price, SLA, accreditation), not adjectives.
+* **Caution (defamation exposure):** Comparison claims must be verifiable and current. Attribute disputed claims to their source; avoid asserted superiority on subjective dimensions.
+
+**Application layer — launch staging:**
+
+* *Reference note:* `§2.6` / `§2.10` inside the doctrine block above refer to `kirby-aiseo-skill` Module 2 sections (comparison architecture and high-intent hubs), not to this file's stage numbering.
+* **On-site (within the Stage 2 Top 5 cap):** stage **one** flagship comparison page — not one per money page — in honest "X vs. Y" hub format where the brand appears as *one option among competitors* with checkable facts (price, SLA, accreditation). Never self-award: 85% of AI brand citations for commercial and transactional queries originate from third-party domains, and first-party "we win" comparisons are discounted as self-reviews. Reuse a deprecated listicle slot; do not add file count.
+* **Off-site (where consensus actually shifts):** the syndicated third-party comparison placement reinforcing the §1.1 primary association belongs to Stage 3.2 velocity-matched links and [kirby-off-page-seo](../../kirby-off-page-seo/SKILL.md) — do not invent outreach here.
+* **Guardrail:** Any comparison page that positions the brand as superior requires explicit user confirmation before publishing (defamation caution in the doctrine block; claims must be verifiable and current).
 
 ## Stage 3: The "Zero to 100" Off-Site Playbook
 
@@ -53,11 +80,15 @@ The core mechanic is to build the *entire* site in a **non-indexed staging envir
 ### 3.3 AI Visibility
 *   Detail tactics to trigger brand consensus in ChatGPT, Claude, and AI Overviews.
 
+### 3.4 Fresh-Domain AI Overview Blackout (Condensed Routing Note — *not* a twin; full doctrine: `kirby-aiseo-skill` Module 1 §1.20)
+*   Freshly registered domains hit a reported **24–72 hour anti-spam holding period** in Google AI Overviews (first documented on exact-match domains; treat as directional for any fresh domain), then rank normally after 1–2 weeks of indexation. Scoped to Google AI Overviews only — ChatGPT/Claude visibility (§3.3) is not quarantine-gated.
+*   **Measurement blackout:** do not judge AI Overview visibility for the launch domain before the end of week 2 post-flip; earlier readings measure the quarantine, not the content. Do not delay the Day 1 flip waiting out the window.
+
 ## Stage 4: Advanced Expansion
 
 *   Once the root domain hits 10k monthly organic traffic (the baseline threshold), deploy satellite microsites and parasite SEO for long-tail domination.
 *   **Guardrail:** You MUST require explicit user confirmation before executing any "satellite microsites" or "parasite SEO" tactics to ensure compliance with terms of service and risk tolerance.
 
 ## Execution Rules
-- **Cross-Skill Routing:** For off-page execution details, see the [kirby-off-page-seo](../../kirby-off-page-seo/SKILL.md) skill. For deployment rules, refer to [kirby-seo-deployment](../../kirby-seo-deployment/SKILL.md).
+- **Cross-Skill Routing:** For off-page execution details, see the [kirby-off-page-seo](../../kirby-off-page-seo/SKILL.md) skill. For deployment rules, refer to [kirby-seo-deployment](../../kirby-seo-deployment/SKILL.md). For the canonical doctrine behind §2.1 (comparison pages), §3.4 (fresh-domain quarantine), and entity trinity work, refer to [kirby-aiseo-skill](../../kirby-aiseo-skill/SKILL.md).
 - **Hollow Shell Rule:** The full logic lives here in `00_dispatcher.md`. Never alter `../SKILL.md`.
