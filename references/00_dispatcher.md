@@ -10,6 +10,7 @@ This skill is a standalone engine for launching a brand-new site from zero autho
 ## Module Index
 
 - **Module 1: AIO Parasite Incubation & The 5-Year Longevity Playbook (Charles Floate E1193)** -> Read `./module_1_aio_incubation_longevity.md` (§1.1 incubation gap, §1.2 AIO incubation strategy, §1.3 longevity maintenance loops, §1.4 handover to owned domain, §1.5 guardrails)
+- **Module 2: Launch Milestone Calibration to Google's Empirical Timing Benchmarks (Illyes Oct 2026)** -> Read `./module_2_launch_milestone_calibration.md` (§2.2 calibrated milestone table, §2.3 Stage 3 timing recalibration, §2.4 Stage 4 authority-bypass threshold)
 
 ## Stage 1: Interactive Intake
 
@@ -96,5 +97,5 @@ The core mechanic is to build the *entire* site in a **non-indexed staging envir
 *   **Guardrail:** You MUST require explicit user confirmation before executing any "satellite microsites" or "parasite SEO" tactics to ensure compliance with terms of service and risk tolerance.
 
 ## Execution Rules
-- **Cross-Skill Routing:** For off-page execution details, see the [kirby-off-page-seo](../../kirby-off-page-seo/SKILL.md) skill. For deployment rules, refer to [kirby-seo-deployment](../../kirby-seo-deployment/SKILL.md). For the canonical doctrine behind §2.1 (comparison pages), §3.4 (fresh-domain quarantine), and entity trinity work, refer to [kirby-aiseo-skill](../../kirby-aiseo-skill/SKILL.md).
+- **Cross-Skill Routing:** For off-page execution details, see the [kirby-off-page-seo](../../kirby-off-page-seo/SKILL.md) skill. For deployment rules, refer to [kirby-seo-deployment](../../kirby-seo-deployment/SKILL.md). For the canonical doctrine behind §2.1 (comparison pages), §3.4 (fresh-domain quarantine), and entity trinity work, refer to [kirby-aiseo-skill](../../kirby-aiseo-skill/SKILL.md). For launch-calendar expectations, verify all Stage 3–4 milestones against the calibrated table in `./module_2_launch_milestone_calibration.md` (benchmark source: [kirby-seo-timing-benchmarks](../../kirby-seo-timing-benchmarks/SKILL.md)).
 - **Hollow Shell Rule:** The full logic lives here in `00_dispatcher.md`. Never alter `../SKILL.md`.

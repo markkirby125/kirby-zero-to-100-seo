@@ -1,8 +1,8 @@
 ---
 name: kirby-zero-to-100-seo
-description: "Executes Charles Floate's Ep 1136 A-to-Z playbook for launching a new business. Scaffolds on-site semantic architecture and generates an off-site velocity-matched execution playbook."
+description: "Executes Charles Floate's Ep 1136 A-to-Z playbook for launching a new business. Scaffolds on-site semantic architecture, generates an off-site velocity-matched execution playbook, and calibrates launch milestones to Google's empirical timing benchmarks."
 category: technique
-triggers: [zero-to-100, new-business, launch-site, new-site-seo, brand-launchpad]
+triggers: [zero-to-100, new-business, launch-site, new-site-seo, brand-launchpad, launch-milestones, launch-timing]
 risk: unverified
 author: paul-kirby
 tags: [kirby, ai-agent, workflow, seo-launch]
