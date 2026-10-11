@@ -7,6 +7,10 @@ This skill is a standalone engine for launching a brand-new site from zero autho
 *   **Do not use** for deployment staging or EMDs. Use [kirby-seo-deployment](../../kirby-seo-deployment/SKILL.md).
 *   **Do not use** if the site is already indexed. This methodology relies on a specific "Day 1" forced-index spike.
 
+## Module Index
+
+- **Module 1: AIO Parasite Incubation & The 5-Year Longevity Playbook (Charles Floate E1193)** -> Read `./module_1_aio_incubation_longevity.md` (§1.1 incubation gap, §1.2 AIO incubation strategy, §1.3 longevity maintenance loops, §1.4 handover to owned domain, §1.5 guardrails)
+
 ## Stage 1: Interactive Intake
 
 Prompt the user for the following 4 pieces of information (if not running in `-y` or non-interactive mode. If non-interactive, use best-guess defaults from context):
