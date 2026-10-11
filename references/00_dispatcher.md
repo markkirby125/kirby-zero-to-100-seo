@@ -79,6 +79,7 @@ The core mechanic is to build the *entire* site in a **non-indexed staging envir
 
 ### 3.3 AI Visibility
 *   Detail tactics to trigger brand consensus in ChatGPT, Claude, and AI Overviews.
+*   **AIO Parasite Incubation:** While the fresh domain sits out the sandbox and AI Overview quarantine, capture head-query AI Overview citations on parasite platforms and bridge the traffic to the owned domain — full strategy, 5-year longevity maintenance, and handover timing in `./module_1_aio_incubation_longevity.md`.
 
 ### 3.4 Fresh-Domain AI Overview Blackout (Condensed Routing Note — *not* a twin; full doctrine: `kirby-aiseo-skill` Module 1 §1.20)
 *   Freshly registered domains hit a reported **24–72 hour anti-spam holding period** in Google AI Overviews (first documented on exact-match domains; treat as directional for any fresh domain), then rank normally after 1–2 weeks of indexation. Scoped to Google AI Overviews only — ChatGPT/Claude visibility (§3.3) is not quarantine-gated.
@@ -87,6 +88,7 @@ The core mechanic is to build the *entire* site in a **non-indexed staging envir
 ## Stage 4: Advanced Expansion
 
 *   Once the root domain hits 10k monthly organic traffic (the baseline threshold), deploy satellite microsites and parasite SEO for long-tail domination.
+*   **Parasite handover:** At the baseline threshold, execute the incubation→ownership reversal from `./module_1_aio_incubation_longevity.md` §1.4 (parasite assets become citations; maintenance budget shifts to the owned domain).
 *   **Guardrail:** You MUST require explicit user confirmation before executing any "satellite microsites" or "parasite SEO" tactics to ensure compliance with terms of service and risk tolerance.
 
 ## Execution Rules
