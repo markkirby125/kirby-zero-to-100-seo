@@ -4,7 +4,7 @@ description: "Executes Charles Floate's Ep 1136 A-to-Z playbook for launching a 
 category: technique
 triggers: [zero-to-100, new-business, launch-site, new-site-seo, brand-launchpad]
 risk: unverified
-author: ai-agent
+author: paul-kirby
 tags: [kirby, ai-agent, workflow, seo-launch]
 ---
 
