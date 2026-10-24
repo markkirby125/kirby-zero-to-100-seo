@@ -65,6 +65,23 @@ Create the `[brand-slug]-launchpad/` directory (using absolute paths). **Before 
 * **Off-site (where consensus actually shifts):** the syndicated third-party comparison placement reinforcing the §1.1 primary association belongs to Stage 3.2 velocity-matched links and [kirby-off-page-seo](../../kirby-off-page-seo/SKILL.md) — do not invent outreach here.
 * **Guardrail:** Any comparison page that positions the brand as superior requires explicit user confirmation before publishing (defamation caution in the doctrine block; claims must be verifiable and current).
 
+### 2.2 Controlled Launch Sequencing & The Programmatic "Mountain Pattern" Safeguard
+
+*Source: The SEO Meta Study (Krešimir Ćorluka; Zenodo DOI: 10.5281/zenodo.22768160) discussed in The Edward Show Ep. 1191/1207.*
+
+* **The Anti-Shotgun Sequencing Law:** Dumping 500–1,000 programmatic pages on Day 1 on a fresh domain ("Shotgun Launching") overwhelms crawler allocation, triggers template fail-rate alarms (`Crawled - currently not indexed` via [`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md) Module 8), and triggers low-differentiation spam flags ([`kirby-local-seo`](../../kirby-local-seo/SKILL.md) Module 7). The 2026 Meta Study confirmed that controlled, staged rollouts prevent catastrophic template de-indexing.
+* **The 3-Tier Launch Horizon:**
+  1. **Tier 1 (Day 1–30 — The Core Bastion):** Deploy only the core authoritative pages (Homepage, primary money pages, one flagship comparison page per §2.1, `/about/`, `/contact/` — capped at Top 5 without explicit user approval per Stage 2). Establish the §1.1 primary entity association and allow Googlebot to map clean site architecture.
+  2. **Tier 2 (Day 31–90 — The 90-Day Stabilization Window):** Monitor indexation and crawl queues. Apply only single-variable modifications logged in `seo_changelog.json` ([`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md) Module 15). Never expand page count until Tier 1 pages demonstrate stable crawl frequency and striking-distance rankings.
+  3. **Tier 3 (Month 4+ — Controlled Expansion):** Only after the domain establishes baseline trust, begin rolling out programmatic or long-tail clusters in batches of 25–50 pages.
+* **The "Mountain Pattern" Safeguard for Programmatic Pages:**
+  * When generating programmatic directories (location landing pages or product catalogs), never publish thin boilerplate templates with only city names or SKU numbers swapped.
+  * Every programmatic page must satisfy the **4-Point Mountain Verification Gate**:
+    1. **Unique Data Density:** Minimum 30% truly unique local or product data (local project photos per in-situ standards, local staff bylines, or unique technical datasheets).
+    2. **Context Saturation:** Embed explicit attribute and constraint matrices ([`kirby-decision-engine-optimization`](../../kirby-decision-engine-optimization/SKILL.md) Module 7) answering pre-sale edge-case queries.
+    3. **Zero Orphan Pages:** Every programmatic page must be inlinked from category hub structures with crawlable HTML links ([`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) Module 19).
+    4. **Hard Approval Gate:** Automated generation beyond the Stage 2 Top 5 cap strictly halts for explicit human approval before any bulk file writes occur.
+
 ## Stage 3: The "Zero to 100" Off-Site Playbook
 
 The core mechanic is to build the *entire* site in a **non-indexed staging environment**, then flip it live on "Day 1" and force-index via GSC sitemaps alongside a massive trust-signal blast. Generate the playbook and save it explicitly to `[brand-slug]-launchpad/execution_playbook.md` with this strict timing:
