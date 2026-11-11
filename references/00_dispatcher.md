@@ -109,8 +109,8 @@ The core mechanic is to build the *entire* site in a **non-indexed staging envir
 
 ## Stage 4: Advanced Expansion
 
-*   Once the root domain hits 10k monthly organic traffic (the baseline threshold), deploy satellite microsites and parasite SEO for long-tail domination.
-*   **Parasite handover:** At the baseline threshold, execute the incubation→ownership reversal from `./module_1_aio_incubation_longevity.md` §1.4 (parasite assets become citations; maintenance budget shifts to the owned domain).
+*   Once the root domain hits 10k monthly organic traffic (the baseline threshold), satellite microsites and parasite SEO become an option for long-tail coverage, subject to the guardrail below and `../../kirby-saas-syndicate/SKILL.md` (its dispatcher Stage 3). Satellites need real content of their own (Mountain Pattern safeguard, §2.2).
+*   **Parasite handover:** If parasite assets were used, at the baseline threshold execute the incubation→ownership reversal from `./module_1_aio_incubation_longevity.md` §1.4 (parasite assets become citations; maintenance budget shifts to the owned domain).
 *   **Guardrail:** You MUST require explicit user confirmation before executing any "satellite microsites" or "parasite SEO" tactics to ensure compliance with terms of service and risk tolerance.
 
 ## Execution Rules
