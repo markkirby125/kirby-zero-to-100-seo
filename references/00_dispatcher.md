@@ -22,6 +22,8 @@ Prompt the user for the following 4 pieces of information (if not running in `-y
 
 **Idempotency & Rerun Policy:** If the target workspace directory (always use absolute paths to avoid bare `./` traversal risks) already exists, pause and ask the user whether to `resume` (skip existing files), `clobber` (overwrite), or `abort`. Even in non-interactive mode, `clobber` requires explicit user confirmation to prevent data loss. Default to `resume` if no input is provided.
 
+> **Freeze Check:** If today falls within Nov 10 – ~Dec 1, 2026 (core update rollout + 7 days), do the Day 1 forced-index spike only after the window or as an explicit user-accepted exception; staging/scaffolding remains allowed (`../../kirby-seo-telemetry/SKILL.md` Module 16 / `../../kirby-seo-deployment/SKILL.md` Module 7 §7.6).
+
 ### 1.1 Primary Association Lock-In (Pre-Launch Gate — decide BEFORE Day 1)
 
 *Source: Charles Floate (LLM Mastery). Net-new doctrine for this skill — no canonical twin.*
