@@ -15,7 +15,7 @@ This skill is a standalone engine for launching a brand-new site from zero autho
 ## Stage 1: Interactive Intake
 
 Prompt the user for the following 4 pieces of information (if not running in `-y` or non-interactive mode. If non-interactive, use best-guess defaults from context):
-1. **Brand Name & Core Offering** (Used to slugify the path: apply NFKC normalization, then strictly match regex `^[a-z0-9]([a-z0-9-]{0,63})$`. Reject empty or traversal paths like `../`).
+1. **Brand Name & Core Offering** (Used to slugify the path: apply NFKC normalization, then strictly match regex `^[a-z0-9]([a-z0-9-]{0,63})$`. Reject empty or traversal paths like `../`). **Bare `[Brand Name]` Page-1 SERP Homonym Collision Audit (Kasra Dash V1):** Before locking a fresh brand name or registering its domain, run an incognito bare `[Brand Name]` Google search and inspect all 10 Page-1 organic slots plus any Knowledge Panel. Distinguish entity disambiguation / homonym collisions (unrelated software, dictionary terms, or legacy businesses occupying Page-1 slots) from zero branded query demand. If entrenched homonyms dominate Page 1, flag the entity-disambiguation cost and recommend adding a category modifier or selecting a distinct brand string before proceeding.
 2. **Target Audience & Core Competitors**
 3. **Launch Scale Target** (e.g., 10-page MVP vs. 1,000-page programmatic build)
 4. **Target Location or Target Domain**
@@ -38,16 +38,22 @@ Prompt the user for the following 4 pieces of information (if not running in `-y
 Create the `[brand-slug]-launchpad/` directory (using absolute paths). **Before creating any files, explicitly echo the resolved absolute path to the user.** Populate it:
 
 *   **`/architecture/`**
-    *   `site_structure.md`: Define the URL taxonomy and navigation tree.
+    *   `site_structure.md`: Define the URL taxonomy and navigation tree, including a Day-1 `robots.txt` blueprint that keeps **`OAI-SearchBot`** and **`PerplexityBot`** explicitly `Allow: /` from Day 1 alongside `Googlebot` so LLM search engines can crawl and cite the site immediately post-flip.
     *   `topical_map.md`: Expand the core offering into a long-tail, high-intent keyword map.
 
 *   **`/semantics/`**
-    *   `schema.json`: Write valid JSON-LD markup representing the entity. Use `LocalBusiness` if a location is provided, otherwise `Organization`. Use single-object or `@graph`. **Must substitute all placeholders (no `example.com`).**
+    *   `schema.json`: Write valid JSON-LD markup representing the entity. Use `LocalBusiness` if a location is provided, otherwise `Organization`. Use single-object or `@graph`. **Must substitute all placeholders (no `example.com`).** **Strict Schema Guardrail:** Never attach `AggregateRating` or `Review` JSON-LD to third-party or aggregated review counts on self-corroboration or `Organization`/`LocalBusiness` nodes (violates Google's self-serving review snippet guidelines).
     *   `semantic_triples.md`: Define the subject-predicate-object entity relationships.
 
 *   **`/content/`**
     *   *Warning:* Do not blindly generate 1,000 files. Cap generation at the **Top 5 core pages**. Output the remainder of the topical map as `content_manifest.csv` and prompt the user for confirmation before bulk creation.
-    *   For the core pages, scaffold `.md` stubs with H1/H2 structures and semantic guidelines.
+    *   **Self-Corroboration Hub (`/trust`) + SSOT `"My Business Facts"` Integration (within Top-5 Cap):** Cleanly within the Top-5 core page cap (either as a dedicated `/trust` + `/facts` pair or consolidated into `/about/` so file count stays <= 5), scaffold:
+        1. **On-Domain Self-Corroboration Hub (`/trust` or `/about/#trust` — Kasra Dash V4 #1 Tier):** Answers *"Can you trust [Brand]?"* with dated operational numbers, explicit QC/vetting steps, clear guarantees with honest exclusions/limits, verified third-party review consensus in plain text with outbound verification links (**NO `AggregateRating` JSON-LD**), and skeptical trust FAQs.
+        2. **SSOT `"My Business Facts"` Section/Page (`/facts` or `/about/#facts` — Kasra Dash V5):** Machine-readable single source of truth listing canonical company facts, pricing tiers, SLAs, founding date, accreditations, and exact model/feature specs (`OAI-SearchBot` and `PerplexityBot` unblocked from Day 1).
+    *   **V5 6 LLM Extraction Rules & Pre-Flip Quality Screens:** For all core `.md` stubs, enforce the **6 LLM Extraction Rules** (1. mirror exact query fan-out phrasing in `H2`/`H3` headings; 2. use verbatim product/model/competitor names; 3. zero invented claims or unverified superlatives; 4. include explicit competitor concessions where rivals win; 5. match or beat the factual depth of currently cited sources; 6. write in direct, plain English without filler) and screen every stub against:
+        *   **Rank-and-Rent Tells (V2):** Reject stock-photo-only stubs or anonymous lead-gen framing; pair launch assets with real founder/team attribution, authentic product/job-site visuals, and branded-search induction.
+        *   **Logo-Swap Lookalike Test:** Verify layout, heading structure, and copy skeletons pass [`kirby-seo-deployment`](../../kirby-seo-deployment/SKILL.md) Module 7 §7.3.
+        *   **Above-the-Fold Viewport-Match Test:** Ensure the primary conversion mechanism (booking widget, interactive calculator, `tel:` action, transparent pricing anchor, and plain-text trust proof) is immediately visible in the initial viewport per [`kirby-text-first-cro`](../../kirby-text-first-cro/SKILL.md) §1.9.
 
 ### 2.1 Comparison-Page Launch Staging (Self-Contained Twin of `kirby-aiseo-skill` Module 2 §2.40)
 
@@ -74,7 +80,7 @@ Create the `[brand-slug]-launchpad/` directory (using absolute paths). **Before 
 
 * **The Anti-Shotgun Sequencing Law:** Dumping 500–1,000 programmatic pages on Day 1 on a fresh domain ("Shotgun Launching") overwhelms crawler allocation, triggers template fail-rate alarms (`Crawled - currently not indexed` via [`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md) Module 8), and triggers low-differentiation spam flags ([`kirby-local-seo`](../../kirby-local-seo/SKILL.md) Module 7). The 2026 Meta Study confirmed that controlled, staged rollouts prevent catastrophic template de-indexing.
 * **The 3-Tier Launch Horizon:**
-  1. **Tier 1 (Day 1–30 — The Core Bastion):** Deploy only the core authoritative pages (Homepage, primary money pages, one flagship comparison page per §2.1, `/about/`, `/contact/` — capped at Top 5 without explicit user approval per Stage 2). Establish the §1.1 primary entity association and allow Googlebot to map clean site architecture.
+  1. **Tier 1 (Day 1–30 — The Core Bastion):** Deploy only the core authoritative pages (Homepage, primary money page, one flagship comparison page per §2.1, `/contact/`, and `/about/` integrating `/trust` + `/facts` — or dedicated `/trust` + `/facts` pages within the Top-5 total cap without explicit user approval per Stage 2, with `OAI-SearchBot`/`PerplexityBot` unblocked from Day 1, zero `AggregateRating` JSON-LD on third-party reviews, and passing Rank-and-Rent, Logo-Swap Lookalike [`kirby-seo-deployment`](../../kirby-seo-deployment/SKILL.md) Module 7 §7.3, and Above-the-Fold Viewport-Match [`kirby-text-first-cro`](../../kirby-text-first-cro/SKILL.md) §1.9 gates). Establish the §1.1 primary entity association and allow Googlebot and AI search crawlers to map clean site architecture.
   2. **Tier 2 (Day 31–90 — The 90-Day Stabilization Window):** Monitor indexation and crawl queues. Core pages that have started getting impressions are frozen for the window (directional, single-source; not a Google rule): only changes already filed in `seo_changelog.json` plus defect fixes (broken pages, factual or legal errors, security), per the `FREEZE` entry in [`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md) Module 15 §15.2. Single-variable modifications logged in `seo_changelog.json` apply only to non-frozen pages. Never expand page count until Tier 1 pages demonstrate stable crawl frequency and striking-distance rankings.
   3. **Tier 3 (Month 4+ — Controlled Expansion):** Only after the domain establishes baseline trust, begin rolling out programmatic or long-tail clusters in batches of 25–50 pages.
 * **The "Mountain Pattern" Safeguard for Programmatic Pages:**
@@ -91,6 +97,8 @@ The core mechanic is to build the *entire* site in a **non-indexed staging envir
 
 ### 3.1 Entity Stacking & Forced Indexing (Day 1-3)
 *   Provide a checklist for social profiles, citations, reference sites, and directories. These must go live in **1-3 days** to spike the crawl rate on the new site.
+*   **Unique Attribute-Led Directory Bio Template (Kasra Dash V3):** Never paste identical boilerplate bios across directories. Enforce this 4-line modular structure that rotates the opening attribute hook per directory while keeping entity facts locked:
+    `[Attribute + ICP + Outcome] / [1-sentence hard-number proof] / [Service Areas or Core Capabilities] / [Identical NAP & Canonical URL]`
 *   Mandate forced indexing (via GSC, press releases, or sameAs schema).
 *   **Guardrail:** You MUST require explicit user confirmation before executing any "massive trust-signal blast" or "forced indexing" actions.
 
@@ -103,12 +111,12 @@ The core mechanic is to build the *entire* site in a **non-indexed staging envir
 *   Provide strategies for reverse-engineering competitor link overlap.
 
 ### 3.3 AI Visibility
-*   Detail tactics to trigger brand consensus in ChatGPT, Claude, and AI Overviews.
+*   Detail tactics to trigger brand consensus in ChatGPT, Claude, and AI Overviews. Evaluate visibility using **3–5x multi-run Synthesis Recommendation Share probing** (plus multi-turn follow-ups) rather than single-prompt checks, calibrated to engine lag windows (**Google AIO: 2–4 weeks** vs. **ChatGPT Search / Thinking: 60–120 days**).
 *   **AIO Parasite Incubation:** While the fresh domain sits out the sandbox and AI Overview quarantine, capture head-query AI Overview citations on parasite platforms and bridge the traffic to the owned domain — full strategy, 5-year longevity maintenance, and handover timing in `./module_1_aio_incubation_longevity.md`.
 
 ### 3.4 Fresh-Domain AI Overview Blackout (Condensed Routing Note — *not* a twin; full doctrine: `kirby-aiseo-skill` Module 1 §1.20)
-*   Freshly registered domains hit a reported **24–72 hour anti-spam holding period** in Google AI Overviews (first documented on exact-match domains; treat as directional for any fresh domain), then rank normally after 1–2 weeks of indexation. Scoped to Google AI Overviews only — ChatGPT/Claude visibility (§3.3) is not quarantine-gated.
-*   **Measurement blackout:** do not judge AI Overview visibility for the launch domain before the end of week 2 post-flip; earlier readings measure the quarantine, not the content. Do not delay the Day 1 flip waiting out the window.
+*   Freshly registered domains hit a reported **24–72 hour anti-spam holding period** in Google AI Overviews (first documented on exact-match domains; treat as directional for any fresh domain), followed by **1–2 weeks** of indexation and a **2–4 week lag window** for AIO citations to normalize. Scoped to Google AI Overviews only — ChatGPT Search / Thinking (§3.3) is not quarantine-gated, though it carries a **60–120 day** consensus and indexation lag window.
+*   **Measurement blackout:** do not judge AI Overview visibility for the launch domain before the end of **week 2–4** post-flip (see `./module_2_launch_milestone_calibration.md` §2.2); earlier readings measure the quarantine and indexation ramp, not the content. Do not delay the Day 1 flip waiting out the window.
 
 ## Stage 4: Advanced Expansion
 
