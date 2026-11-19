@@ -42,7 +42,7 @@ Create the `[brand-slug]-launchpad/` directory (using absolute paths). **Before 
     *   `topical_map.md`: Expand the core offering into a long-tail, high-intent keyword map.
 
 *   **`/semantics/`**
-    *   `schema.json`: Write valid JSON-LD markup representing the entity. Use `LocalBusiness` if a location is provided, otherwise `Organization`. Use single-object or `@graph`. **Must substitute all placeholders (no `example.com`).** **Strict Schema Guardrail:** Never attach `AggregateRating` or `Review` JSON-LD to third-party or aggregated review counts on self-corroboration or `Organization`/`LocalBusiness` nodes (violates Google's self-serving review snippet guidelines).
+    *   `schema.json`: Write valid JSON-LD markup representing the entity. Use `LocalBusiness` if a location is provided, otherwise `Organization`, inside one unified `@graph`; schema is an identifier and consistency aid, not a ranking lever (directional, single-source). Never add `Offer` or `AggregateOffer` nodes on service, lead-gen or local pages (conservative default, directional and unverified; genuine ecommerce product offers follow `../../kirby-aiseo-skill/SKILL.md` §2.49). **Must substitute all placeholders (no `example.com`).** **Strict Schema Guardrail:** Never attach `AggregateRating` or `Review` JSON-LD to the business's own reviews or to third-party or aggregated review counts on self-corroboration or `Organization`/`LocalBusiness` nodes (violates Google's self-serving review snippet guidelines).
     *   `semantic_triples.md`: Define the subject-predicate-object entity relationships.
 
 *   **`/content/`**
@@ -93,14 +93,14 @@ Create the `[brand-slug]-launchpad/` directory (using absolute paths). **Before 
 
 ## Stage 3: The "Zero to 100" Off-Site Playbook
 
-The core mechanic is to build the *entire* site in a **non-indexed staging environment**, then flip it live on "Day 1" and force-index via GSC sitemaps alongside a massive trust-signal blast. Generate the playbook and save it explicitly to `[brand-slug]-launchpad/execution_playbook.md` with this strict timing:
+The core mechanic is to build the *entire* site in a **non-indexed staging environment**, then flip it live on "Day 1" and force-index via GSC sitemaps alongside the entity-stacking bundle below (paced, not bunched into one burst, per §3.1). Generate the playbook and save it explicitly to `[brand-slug]-launchpad/execution_playbook.md` with this strict timing:
 
 ### 3.1 Entity Stacking & Forced Indexing (Day 1-3)
-*   Provide a checklist for social profiles, citations, reference sites, and directories. These must go live in **1-3 days** to spike the crawl rate on the new site.
+*   Provide a checklist for social profiles, citations, reference sites, and directories. Aim to get these live early (the 1-3 day target is a pacing goal, not a requirement); do not bunch them into one burst, because burst velocity is a reported spam-classifier signal (directional, single-source).
 *   **Unique Attribute-Led Directory Bio Template (Kasra Dash V3):** Never paste identical boilerplate bios across directories. Enforce this 4-line modular structure that rotates the opening attribute hook per directory while keeping entity facts locked:
     `[Attribute + ICP + Outcome] / [1-sentence hard-number proof] / [Service Areas or Core Capabilities] / [Identical NAP & Canonical URL]`
-*   Mandate forced indexing (via GSC, press releases, or sameAs schema).
-*   **Guardrail:** You MUST require explicit user confirmation before executing any "massive trust-signal blast" or "forced indexing" actions.
+*   Mandate forced indexing (via GSC or press releases). `sameAs` is not an indexing method (directional, single-source): it is an identifier aid that lists only live, indexed profiles the brand owns and can verify.
+*   **Guardrail:** You MUST require explicit user confirmation before executing any "massive trust-signal blast" or "forced indexing" actions. When asking, say that burst velocity is a reported spam-classifier signal (directional, single-source) and offer a staggered citation schedule over the first weeks as the alternative.
 
 ### 3.2 Velocity-Matched Links (Month 1)
 *   Calculate a first-month backlink target based on the Launch Scale Target using this explicit table:
@@ -120,7 +120,7 @@ The core mechanic is to build the *entire* site in a **non-indexed staging envir
 
 ## Stage 4: Advanced Expansion
 
-*   Once the root domain hits 10k monthly organic traffic (the baseline threshold), satellite microsites and parasite SEO become an option for long-tail coverage, subject to the guardrail below and `../../kirby-saas-syndicate/SKILL.md` (its dispatcher Stage 3). Satellites need real content of their own (Mountain Pattern safeguard, §2.2).
+*   Once the root domain hits 10k monthly organic traffic (the baseline threshold), satellite microsites and parasite SEO become an option for long-tail coverage, subject to the guardrail below and `../../kirby-saas-syndicate/SKILL.md` (its dispatcher Stage 3). Satellites need real content of their own (Mountain Pattern safeguard, §2.2). Each satellite must also pass `../../kirby-seo-deployment/SKILL.md` Module 7 §7.3: each satellite must be a genuine standalone property disclosed as yours; do not build a network, and do not vary hosting, templates or markup to mask common ownership.
 *   **Parasite handover:** If parasite assets were used, at the baseline threshold execute the incubation→ownership reversal from `./module_1_aio_incubation_longevity.md` §1.4 (parasite assets become citations; maintenance budget shifts to the owned domain).
 *   **Guardrail:** You MUST require explicit user confirmation before executing any "satellite microsites" or "parasite SEO" tactics to ensure compliance with terms of service and risk tolerance.
 
