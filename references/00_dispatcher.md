@@ -46,7 +46,7 @@ Create the `[brand-slug]-launchpad/` directory (using absolute paths). **Before 
     *   `semantic_triples.md`: Define the subject-predicate-object entity relationships.
 
 *   **`/content/`**
-    *   *Warning:* Do not blindly generate 1,000 files. Cap generation at the **Top 5 core pages**. Output the remainder of the topical map as `content_manifest.csv` and prompt the user for confirmation before bulk creation.
+    *   *Warning:* Do not blindly generate 1,000 files. Cap generation at the **Top 5 core pages**. Name the primary entity and intent in the first 50-70 words and use semantic HTML5 (directional, house guardrail). Output the remainder of the topical map as `content_manifest.csv` and prompt the user for confirmation before bulk creation.
     *   **Self-Corroboration Hub (`/trust`) + SSOT `"My Business Facts"` Integration (within Top-5 Cap):** Cleanly within the Top-5 core page cap (either as a dedicated `/trust` + `/facts` pair or consolidated into `/about/` so file count stays <= 5), scaffold:
         1. **On-Domain Self-Corroboration Hub (`/trust` or `/about/#trust` — Kasra Dash V4 #1 Tier):** Answers *"Can you trust [Brand]?"* with dated operational numbers, explicit QC/vetting steps, clear guarantees with honest exclusions/limits, verified third-party review consensus in plain text with outbound verification links (**NO `AggregateRating` JSON-LD**), and skeptical trust FAQs.
         2. **SSOT `"My Business Facts"` Section/Page (`/facts` or `/about/#facts` — Kasra Dash V5):** Machine-readable single source of truth listing canonical company facts, pricing tiers, SLAs, founding date, accreditations, and exact model/feature specs (`OAI-SearchBot` and `PerplexityBot` unblocked from Day 1).
