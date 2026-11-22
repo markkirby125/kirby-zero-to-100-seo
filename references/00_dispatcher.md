@@ -99,7 +99,7 @@ The core mechanic is to build the *entire* site in a **non-indexed staging envir
 *   Provide a checklist for social profiles, citations, reference sites, and directories. Aim to get these live early (the 1-3 day target is a pacing goal, not a requirement); do not bunch them into one burst, because burst velocity is a reported spam-classifier signal (directional, single-source).
 *   **Unique Attribute-Led Directory Bio Template (Kasra Dash V3):** Never paste identical boilerplate bios across directories. Enforce this 4-line modular structure that rotates the opening attribute hook per directory while keeping entity facts locked:
     `[Attribute + ICP + Outcome] / [1-sentence hard-number proof] / [Service Areas or Core Capabilities] / [Identical NAP & Canonical URL]`
-*   Mandate forced indexing (via GSC or press releases). `sameAs` is not an indexing method (directional, single-source): it is an identifier aid that lists only live, indexed profiles the brand owns and can verify.
+*   Offer indexing requests (via GSC) only within the confirmation guardrail below; mass request-indexing is quota-bound and footprint-risky (see `kirby-seo-timing-benchmarks` Module 5). `sameAs` is not an indexing method (directional, single-source): it is an identifier aid that lists only live, indexed profiles the brand owns and can verify.
 *   **Guardrail:** You MUST require explicit user confirmation before executing any "massive trust-signal blast" or "forced indexing" actions. When asking, say that burst velocity is a reported spam-classifier signal (directional, single-source) and offer a staggered citation schedule over the first weeks as the alternative.
 
 ### 3.2 Velocity-Matched Links (Month 1)
