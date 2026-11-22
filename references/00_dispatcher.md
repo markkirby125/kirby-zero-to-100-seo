@@ -9,8 +9,8 @@ This skill is a standalone engine for launching a brand-new site from zero autho
 
 ## Module Index
 
-- **Module 1: AIO Parasite Incubation & The 5-Year Longevity Playbook (Charles Floate E1193)** -> Read `./module_1_aio_incubation_longevity.md` (§1.1 incubation gap, §1.2 AIO incubation strategy, §1.3 longevity maintenance loops, §1.4 handover to owned domain, §1.5 guardrails)
-- **Module 2: Launch Milestone Calibration to Google's Empirical Timing Benchmarks (Illyes Oct 2026)** -> Read `./module_2_launch_milestone_calibration.md` (§2.2 calibrated milestone table, §2.3 Stage 3 timing recalibration, §2.4 Stage 4 authority-bypass threshold)
+- **Module 1: AIO Parasite Incubation & The 5-Year Longevity Playbook (Charles Floate E1193)** -> Read `./module_1_aio_incubation_longevity.md` (§1.1 incubation gap, §1.2 AIO incubation strategy, §1.3 longevity maintenance loops, §1.4 handover to owned domain, §1.5 guardrails, §1.6 Day-1 Source Context & strict platform-exploit prohibitions; paired with [`kirby-source-context-topical-architect`](../../kirby-source-context-topical-architect/SKILL.md) for Wanted/Unwanted Entity Boundaries & [`kirby-linkable-microsite-factory`](../../kirby-linkable-microsite-factory/SKILL.md) for standalone utility link magnets)
+- **Module 2: Launch Milestone Calibration to Google's Empirical Timing Benchmarks (Illyes Oct 2026)** -> Read `./module_2_launch_milestone_calibration.md` (§2.2 calibrated milestone table, §2.3 Stage 3 timing recalibration, §2.4 Stage 4 authority-bypass threshold, §2.6 3-month subfolder maturation & editorial-capacity pacing)
 
 ## Stage 1: Interactive Intake
 

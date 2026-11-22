@@ -24,3 +24,7 @@ When the root domain hits the Stage 4 baseline (10k monthly organic), reverse th
 ### **1.5 Guardrails**
 *   Explicit user confirmation is REQUIRED before executing any parasite tactic (this skill's Stage 4 guardrail applies to this module). In non-interactive or `-y` mode, draft only: never publish a parasite asset, a redirect or a paid placement (`../../kirby-saas-syndicate/SKILL.md`, dispatcher Stage 3).
 *   Every placement must pass the SRA boundary test (`../../kirby-aiseo-skill/SKILL.md` Module 15 §15.3). Unmoderated authority-rental on legacy media is struck doctrine — incubation uses moderated UGC/dev platforms only.
+
+### **1.6 Day-1 Source Context Discipline & Strict Platform-Exploit Prohibitions (Nov 2026)**
+*   **Lock Brand SSOT + Wanted/Unwanted Attribute Boundaries Before Drafting:** Alongside Stage 1 §1.1 homonym disambiguation, define exact **Wanted vs. Unwanted Attribute Boundaries** (`../../kirby-source-context-topical-architect/SKILL.md` Module 1) before publishing any informational content so Day-1 AI retrieval crawlers never confuse core entity category with adjacent noise.
+*   **Enforce `§1.8` FTC & Platform Prohibitions (`../../kirby-saas-syndicate/SKILL.md` Module 1 §1.8):** Prohibit unbranded Google Docs `/mobilebasic` Perplexity cloaking and clusters of unbranded fake-editorial review publishers (any number; never treat 3 as an acceptable allowance); prioritize durable owned utility assets via [`kirby-linkable-microsite-factory`](../../kirby-linkable-microsite-factory/SKILL.md) under the 5-year longevity horizon.

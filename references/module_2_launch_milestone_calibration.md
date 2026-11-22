@@ -33,3 +33,7 @@ The 10k-traffic baseline threshold that unlocks satellite/parasite expansion (St
 ## 2.5 Guardrail
 
 This module calibrates *expectations and verification schedules only*. It does not license delaying the Day 1 flip (the quarantine/blackout doctrine in §3.4 stands), and it does not replace the confirmation gates on trust-signal blasts or forced-indexing actions.
+
+### 2.6 3-Month Subfolder Maturation & Editorial-Capacity Pacing (`BrowserStack` Guardrail, Video 11)
+*   When launching incubating content subfolders or programmatic page batches, set batch size by **human editorial review capacity** (small approved clusters, not mechanical cron bursts), never by a cadence designed to look organic or evade filters, and, for **matured 3-month+ subfolders on large enterprise directories (~5,000-page scale; directional, single-source, one interview)**, allow **~3 months** of stabilization before aggressive expansion; smaller sites follow deployment §7.2 human publishing cadence instead. See `../../kirby-seo-deployment/SKILL.md` Module 7 for the pacing rule.
+*   **Prohibit Programmatic Velocity Spikes:** Never trigger `BrowserStack`-style `2,000 AI docs/day` floods (associated with an `~8-month` `~70%` delayed collapse curve — directional, single-source).
