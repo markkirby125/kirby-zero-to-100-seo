@@ -116,7 +116,7 @@ The core mechanic is to build the *entire* site in a **non-indexed staging envir
 
 ### 3.4 Fresh-Domain AI Overview Blackout (Condensed Routing Note — *not* a twin; full doctrine: `kirby-aiseo-skill` Module 1 §1.20)
 *   Freshly registered domains hit a reported **24–72 hour anti-spam holding period** in Google AI Overviews (first documented on exact-match domains; treat as directional for any fresh domain), followed by **1–2 weeks** of indexation; AIO citations normalize **2–4 weeks** after the Day 1 flip (directional, single-source). Scoped to Google AI Overviews only — ChatGPT Search / Thinking (§3.3) is not quarantine-gated, though it carries a **60–120 day** consensus and indexation lag window.
-*   **Measurement blackout:** treat an end-of-week-2 AIO reading as a first, directional read only, and judge only after week 4 (see `./module_2_launch_milestone_calibration.md` §2.2); earlier readings measure the quarantine and indexation ramp, not the content. Do not delay the Day 1 flip waiting out the window.
+*   **Measurement blackout:** do not judge an AIO reading before the end of week 2, and treat weeks 3-4 as the settling window (see `./module_2_launch_milestone_calibration.md` §2.2); earlier readings measure the quarantine and indexation ramp, not the content. Do not delay the Day 1 flip waiting out the window.
 
 ## Stage 4: Advanced Expansion
 

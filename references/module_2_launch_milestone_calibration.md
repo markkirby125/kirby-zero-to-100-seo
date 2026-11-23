@@ -12,12 +12,12 @@ Anchored to the Matrix (tier values in `../../kirby-seo-timing-benchmarks/SKILL.
 
 | Milestone | Folklore expectation | Calibrated expectation (fresh domain) | Calendar implication |
 |---|---|---|---|
-| New URL discovery post-flip (sitemap + GSC request) | Hours | **~20h typical; days-to-weeks on a cold domain; slow tail weeks to never** | Day 1–3 "forced indexing" activities are *inputs*, not guarantees; verify discovery at Day 3, not hour 3 |
+| New URL discovery post-flip (sitemap + GSC request) | Hours | **~20h typical; slow tail of days-to-weeks on a cold domain, weeks to never at the extreme** (cold-domain band is directional) | Day 1–3 "forced indexing" activities are *inputs*, not guarantees; verify discovery at Day 3, not hour 3 |
 | Sitemap processing | Immediate | **~24h typical; up to 14 days slow tail** | Do not resubmit inside 14 days; one clean submission at flip |
 | End-to-end indexing (post-crawl) | Same-day | **from ~1.5h pipeline latency — but only after discovery+crawl fire** | If crawled but not indexed past 14–21 days, it is a quality gate, not a queue (route: Reference 03 §3.3) |
 | Title/snippet correctness in SERPs | Days | **1–2d after recrawl; recrawl itself runs ~30d** — fresh domains have no hot crawl cadence yet | Verify SERP rendering at week 4–6, not day 2 |
 | Canonical consolidation (if staging→live URL flips or www variants exist) | Immediate | **1–3 weeks under clean signals; months if conflicting** | Purge all staging-era canonical/link conflicts *before* flip (checklist: `../../kirby-seo-deployment/SKILL.md` Module 20 §20.2) |
-| AI Overview & LLM Search visibility (fresh domain) | Immediate | **Google AIO:** 24–72h quarantine, then normalization **2–4 weeks** after the Day 1 flip (directional, single-source; §3.4 of this skill's dispatcher / `../../kirby-aiseo-skill/SKILL.md` §1.20); **ChatGPT Search / Thinking:** **60–120 days** typical consensus & indexation lag window | Treat an end-of-week-2 AIO reading as a first, directional read only, and judge only after week 4; evaluate ChatGPT visibility on a 60–120d horizon using **3–5x multi-run Synthesis Recommendation Share probing** (plus multi-turn follow-ups) rather than single-prompt checks |
+| AI Overview & LLM Search visibility (fresh domain) | Immediate | **Google AIO:** 24–72h quarantine, then normalization **2–4 weeks** after the Day 1 flip (directional, single-source; §3.4 of this skill's dispatcher / `../../kirby-aiseo-skill/SKILL.md` §1.20); **ChatGPT Search / Thinking:** **60–120 days** typical consensus & indexation lag window | Do not judge an AIO reading before the end of week 2, and treat weeks 3-4 as the settling window; evaluate ChatGPT visibility on a 60–120d horizon using **3–5x multi-run Synthesis Recommendation Share probing** (plus multi-turn follow-ups) rather than single-prompt checks |
 
 ## 2.3 Stage 3 Timing Recalibration
 
