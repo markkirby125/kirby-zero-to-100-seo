@@ -12,7 +12,7 @@ Anchored to the Matrix (tier values in `../../kirby-seo-timing-benchmarks/SKILL.
 
 | Milestone | Folklore expectation | Calibrated expectation (fresh domain) | Calendar implication |
 |---|---|---|---|
-| New URL discovery post-flip (sitemap + GSC request) | Hours | **~20h typical; slow tail of days-to-weeks on a cold domain** (cold-domain band is directional; slowest case, not an expectation: weeks to never) | Day 1–3 "forced indexing" activities are *inputs*, not guarantees; verify discovery at Day 3, not hour 3 |
+| New URL discovery post-flip (sitemap + GSC request) | Hours | **~20h typical; slow tail of days-to-weeks on a cold domain** (cold-domain band is directional; a URL still undiscovered at Day 14 is a T2 stall, triage per §2.3) | Day 1–3 "forced indexing" activities are *inputs*, not guarantees; verify discovery at Day 3, not hour 3 |
 | Sitemap processing | Immediate | **~24h typical; up to 14 days slow tail** | Do not resubmit inside 14 days; one clean submission at flip |
 | End-to-end indexing (post-crawl) | Same-day | **from ~1.5h pipeline latency — but only after discovery+crawl fire** | If crawled but not indexed past 14–21 days, it is a quality gate, not a queue (route: Reference 03 §3.3) |
 | Title/snippet correctness in SERPs | Days | **1–2d after recrawl; recrawl itself runs ~30d** — fresh domains have no hot crawl cadence yet | Verify SERP rendering at week 4–6, not day 2 |

@@ -89,7 +89,7 @@ Create the `[brand-slug]-launchpad/` directory (using absolute paths). **Before 
     1. **Unique Data Density:** Passes the [`kirby-local-seo`](../../kirby-local-seo/SKILL.md) Module 7 Rule 1 gate (at least 50% of body content specific to the page, verified by the `kirby-local-seo` Module 7 §7.5 Swap Test), built from truly unique local or product data (local project photos per in-situ standards, local staff bylines, or unique technical datasheets).
     2. **Context Saturation:** Embed explicit attribute and constraint matrices ([`kirby-decision-engine-optimization`](../../kirby-decision-engine-optimization/SKILL.md) Module 7) answering pre-sale edge-case queries.
     3. **Zero Orphan Pages:** Every programmatic page must be inlinked from category hub structures with crawlable HTML links ([`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) Module 19).
-    4. **Hard Approval Gate:** Any generation beyond the Stage 2 Top 5 cap, automated or manual, strictly halts for explicit human approval before any file writes occur.
+    4. **Hard Approval Gate:** Any generation of page files beyond the Stage 2 Top 5 cap, automated or manual, halts for explicit human approval before those page files are written. The Stage 2 `content_manifest.csv` is the approval artifact and is not gated. In non-interactive mode, write the manifest only and do not generate beyond-cap pages.
 
 ## Stage 3: The "Zero to 100" Off-Site Playbook
 
