@@ -22,7 +22,7 @@ Parasite placements decay through rank volatility, platform policy shifts, and c
 When the root domain hits the Stage 4 baseline (10k monthly organic), reverse the bridge direction: owned-domain comparison/trust pages become the canonical destination, parasite assets link to them as citations rather than funnels, and the §1.3 maintenance budget shifts toward the owned domain's link profile. Parasite assets that no longer map to a money query are retired (410, per `../../kirby-seo-deployment/SKILL.md` §7.7 doctrine) rather than left to decay into policy risk.
 
 ### **1.5 Guardrails**
-*   Explicit user confirmation is REQUIRED before executing any parasite tactic (this skill's Stage 4 guardrail applies to this module). In non-interactive or `-y` mode, draft only: never publish a parasite asset or a paid placement (`../../kirby-saas-syndicate/SKILL.md`, dispatcher Stage 3). In any mode, never 301 a dead, penalized or expired domain to a parasite profile (link scheme, §1.3).
+*   Explicit user confirmation is REQUIRED before executing any parasite tactic (this skill's Stage 4 guardrail applies to this module). In non-interactive or `-y` mode, draft only: never publish a parasite asset or a paid placement (`../../kirby-saas-syndicate/SKILL.md`, dispatcher Stage 3). In any mode, buying an expired domain to pass its link equity, to any destination (parasite or owned), is a link scheme: do not do it (§1.3).
 *   Every placement must pass the SRA boundary test (`../../kirby-aiseo-skill/SKILL.md` Module 15 §15.3). Unmoderated authority-rental on legacy media is struck doctrine — incubation uses moderated UGC/dev platforms only.
 
 ### **1.6 Day-1 Source Context Discipline & Strict Platform-Exploit Prohibitions (Nov 2026)**
