@@ -86,7 +86,7 @@ Create the `[brand-slug]-launchpad/` directory (using absolute paths). **Before 
 * **The "Mountain Pattern" Safeguard for Programmatic Pages:**
   * When generating programmatic directories (location landing pages or product catalogs), never publish thin boilerplate templates with only city names or SKU numbers swapped.
   * Every programmatic page must satisfy the **4-Point Mountain Verification Gate**:
-    1. **Unique Data Density:** Minimum 30% truly unique local or product data (local project photos per in-situ standards, local staff bylines, or unique technical datasheets).
+    1. **Unique Data Density:** Passes the [`kirby-local-seo`](../../kirby-local-seo/SKILL.md) Module 7 Rule 1 gate (at least 50% of body content specific to the page, verified by the §7.5 Swap Test), built from truly unique local or product data (local project photos per in-situ standards, local staff bylines, or unique technical datasheets).
     2. **Context Saturation:** Embed explicit attribute and constraint matrices ([`kirby-decision-engine-optimization`](../../kirby-decision-engine-optimization/SKILL.md) Module 7) answering pre-sale edge-case queries.
     3. **Zero Orphan Pages:** Every programmatic page must be inlinked from category hub structures with crawlable HTML links ([`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) Module 19).
     4. **Hard Approval Gate:** Automated generation beyond the Stage 2 Top 5 cap strictly halts for explicit human approval before any bulk file writes occur.
